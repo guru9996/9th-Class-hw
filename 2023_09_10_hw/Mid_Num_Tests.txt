@@ -1,0 +1,23 @@
+input: 123
+output: 2
+
+input: 233
+output: 3
+
+input: 332
+output: 3
+
+input: 223
+output: 2
+
+input: 300
+output: 0
+
+input: 987
+output: 8
+
+
+
+
+
+
