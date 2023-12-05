@@ -1,0 +1,32 @@
+PROGRAM SumOfPositiveNums(INPUT, OUTPUT);
+CONST 
+  MaxArrSize = 100;
+TYPE
+  TArr = ARRAY [0 .. MaxArrSize] OF INTEGER;
+VAR
+  ArrSize: SHORTINT;
+  Arr: TArr;
+
+PROCEDURE FillArr(VAR Arr: TArr; VAR ArrSize: SHORTINT);
+VAR
+  I: SHORTINT;
+BEGIN
+  READLN(ArrSize);
+  FOR I := 0 TO ArrSize
+  DO
+    READLN(Arr[I])
+END; 
+
+PROCEDURE ReturnArr(Arr: TArr; ArrSize: SHORTINT);
+VAR
+  I: SHORTINT;
+BEGIN
+  FOR I := 0 TO ArrSize
+  DO
+    WRITELN(Arr[I]);
+END;
+
+BEGIN
+  FillArr(Arr, ArrSize);
+  ReturnArr(Arr, ArrSize)
+END.
