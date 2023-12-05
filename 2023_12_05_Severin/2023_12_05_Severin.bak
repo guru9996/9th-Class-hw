@@ -1,4 +1,4 @@
-PROGRAM WHeapSort(INPUT, OUTPUT);
+PROGRAM HeapSort(INPUT, OUTPUT);
 CONST
   MaxArrSize = 100;
 TYPE
@@ -37,7 +37,7 @@ PROCEDURE HeapSort(VAR Arr: TArr; ArrSize: INTEGER);
 VAR
   Temp, I: INTEGER;
 BEGIN
-  FOR I := ArrSize DIV 2 DOWNTO 0
+  FOR I := ArrSize DIV 2 - 1 DOWNTO 0
   DO
     Heapify(Arr, ArrSize, I);
 
